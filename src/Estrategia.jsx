@@ -1,5 +1,5 @@
 import React from "react";
-import EstrategiaImage from "/images/dolorCabeza2.jpg"; 
+import EstrategiaImage from "/images/dolorCabeza2.jpg";
 const Estrategia = () => {
   return (
     <section className="bg-white p-6 rounded-lg shadow-lg max-w-3xl mx-auto mt-8">
@@ -9,7 +9,7 @@ const Estrategia = () => {
         className="w-full h-64 object-cover rounded-lg mb-6"
       />
 
-      <h2 className="text-2xl font-semibold text-center text-blue-600">
+      <h2 className="text-2xl font-semibold text-center text-purple-900">
         Estrategias de Apoyo para Manejar la Ansiedad Estudiantil
       </h2>
       <p className="mt-4 text-lg text-gray-700">
@@ -22,7 +22,7 @@ const Estrategia = () => {
 
       <div className="mt-6 space-y-4">
         <div className="bg-blue-50 p-4 rounded-lg shadow">
-          <h3 className="text-xl font-semibold text-blue-600">
+          <h3 className="text-xl font-semibold text-purple-600">
             1. Establecimiento de Objetivos Realistas
           </h3>
           <p className="text-gray-700 mt-2">
@@ -33,7 +33,7 @@ const Estrategia = () => {
         </div>
 
         <div className="bg-blue-50 p-4 rounded-lg shadow">
-          <h3 className="text-xl font-semibold text-blue-600">
+          <h3 className="text-xl font-semibold text-purple-600">
             2. Práctica de Técnicas de Relajación
           </h3>
           <p className="text-gray-700 mt-2">
@@ -44,7 +44,7 @@ const Estrategia = () => {
         </div>
 
         <div className="bg-blue-50 p-4 rounded-lg shadow">
-          <h3 className="text-xl font-semibold text-blue-600">
+          <h3 className="text-xl font-semibold text-purple-600">
             3. Autocuidado y Descanso
           </h3>
           <p className="text-gray-700 mt-2">
@@ -55,7 +55,7 @@ const Estrategia = () => {
         </div>
 
         <div className="bg-blue-50 p-4 rounded-lg shadow">
-          <h3 className="text-xl font-semibold text-blue-600">
+          <h3 className="text-xl font-semibold text-purple-600">
             4. Comunicación y Búsqueda de Apoyo
           </h3>
           <p className="text-gray-700 mt-2">
@@ -67,8 +67,8 @@ const Estrategia = () => {
       </div>
 
       <p className="mt-6 text-gray-700">
-        😁😉Recuerda que no estás solo en este proceso. Las estrategias de apoyo y
-        la gestión del tiempo pueden ayudarte a enfrentar los desafíos
+        😁😉Recuerda que no estás solo en este proceso. Las estrategias de apoyo
+        y la gestión del tiempo pueden ayudarte a enfrentar los desafíos
         académicos con confianza y tranquilidad.🙏
       </p>
     </section>

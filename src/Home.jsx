@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 
 function Home() {
   const videoList = ["OQPcaNEyhuQ", "3BOVSMnLecs", "wifsNMDztJg"];
-
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
   const playVideo = (index) => {
@@ -40,14 +39,14 @@ function Home() {
   }, [currentVideoIndex]);
 
   return (
-    <section className="bg-blue-100 bg-[url('/images/Bg.jpg')] bg-cover bg-center min-h-screen p-6">
+    <section className="bg-purple-50 bg-[url('/images/Bg2.jpg')] bg-cover bg-center min-h-screen p-6">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row">
         <div className="w-full lg:w-1/4 pr-4">
           <SubMenu />
         </div>
 
         <div className="w-full lg:w-3/4">
-          <h2 className="animate-pulse text-3xl text-blue-900/90 font-semibold text-center py-4">
+          <h2 className="animate-pulse text-3xl text-purple-900 font-semibold text-center py-4">
             Bienvenido a nuestra página
           </h2>
           <p className="mt-4 text-lg text-center">
@@ -62,7 +61,7 @@ function Home() {
           <div className="flex justify-center mt-4">
             <Link
               to="/informacion"
-              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+              className="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-700"
             >
               Más Información
             </Link>
@@ -71,7 +70,9 @@ function Home() {
       </div>
 
       <div className="mt-8 max-w-7xl mx-auto">
-        <h3 className="text-xl font-semibold text-left">Videos Explicativos</h3>
+        <h3 className="text-xl font-semibold text-purple-900">
+          Videos Explicativos
+        </h3>
 
         <div className="flex flex-col lg:flex-row justify-start mt-2">
           <iframe
@@ -100,12 +101,14 @@ function Home() {
         </div>
 
         <div className="space-y-4 mt-4">
-          <h4 className="font-semibold">Próximos Videos Relacionados</h4>
+          <h4 className="font-semibold text-purple-900">
+            Próximos Videos Relacionados
+          </h4>
           <div className="flex flex-col md:flex-row md:space-x-4">
             {videoList.slice(1).map((videoId, index) => (
               <div
                 key={index}
-                className="bg-white p-4 rounded-lg shadow cursor-pointer w-full mb-4 md:w-1/2 lg:w-1/3"
+                className="bg-white p-4 rounded-lg shadow cursor-pointer w-full mb-4 md:w-1/2 lg:w-1/3 hover:bg-purple-100"
                 onClick={() => playVideo(index + 1)}
               >
                 <h5 className="font-semibold">Próximo Video {index + 1}</h5>
@@ -115,7 +118,7 @@ function Home() {
                   className="w-full h-[80px] rounded"
                 />
                 <p className="text-gray-600 mt-2">
-                {index + 1} Estrés y ansiedad Ver que podemos hacer 
+                  {index + 1} Estrés y ansiedad Ver que podemos hacer
                 </p>
               </div>
             ))}

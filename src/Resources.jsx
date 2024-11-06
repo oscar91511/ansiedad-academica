@@ -5,7 +5,7 @@ const Resources = () => {
     {
       title: "Centro de Asesoramiento Psicológico",
       description:
-        "Ofrecen servicios de apoyo psicológico a estudiantes para manejar la ansiedad y el estrés. Atravez del chat de soporte SENA",
+        "Ofrecen servicios de apoyo psicológico a estudiantes para manejar la ansiedad y el estrés. A través del chat de soporte SENA",
       link: "https://www.sena.edu.co/es-co/ciudadano/paginas/chat.aspx",
     },
     {
@@ -35,20 +35,20 @@ const Resources = () => {
   ];
 
   return (
-    <div className="bg-blue-100 p-6 max-w-2xl mx-auto mt-10 rounded-lg shadow-lg ">
-      <h2 className="text-2xl font-semibold text-center mb-4">
+    <div className="bg-purple-100 p-6 max-w-2xl mx-auto mt-10 rounded-lg shadow-lg">
+      <h2 className="text-2xl font-semibold text-center mb-4 text-purple-900">
         Recursos para la Ansiedad Estudiantil
       </h2>
       <ul className="space-y-4">
         {resources.map((resource, index) => (
-          <li key={index} className="bg-white p-4 rounded-lg shadow">
-            <h3 className="font-bold">{resource.title}</h3>
+          <li key={index} className="bg-white p-4 rounded-lg shadow-md">
+            <h3 className="font-bold text-purple-800">{resource.title}</h3>
             <p className="text-gray-700 mb-2">{resource.description}</p>
             <a
               href={resource.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-purple-600 hover:underline"
             >
               Más información
             </a>

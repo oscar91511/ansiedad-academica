@@ -10,7 +10,7 @@ const Aprendizaje = () => {
         className="w-full h-64 object-cover rounded-lg mb-6"
       />
 
-      <h2 className="text-2xl font-semibold text-center text-blue-600">
+      <h2 className="text-2xl font-semibold text-center text-purple-600">
         Aprendizaje y Control Emocional
       </h2>
 

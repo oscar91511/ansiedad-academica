@@ -19,9 +19,8 @@ const Contacto = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    
     const form = e.target;
-    const endpoint = "https://getform.io/f/bmddkdea"; 
+    const endpoint = "https://getform.io/f/bmddkdea";
 
     fetch(endpoint, {
       method: "POST",
@@ -46,9 +45,11 @@ const Contacto = () => {
   };
 
   return (
-    <div className="bg-blue-100 p-6 max-w-2xl mx-auto mt-10 rounded-lg shadow-lg flex-grow">
-      <h2 className="text-2xl font-semibold text-center mb-4">Contáctanos</h2>
-      
+    <div className="bg-purple-100 p-6 max-w-2xl mx-auto mt-10 rounded-lg shadow-lg flex-grow">
+      <h2 className="text-2xl font-semibold text-center mb-4 text-purple-900">
+        Contáctanos
+      </h2>
+
       <form
         onSubmit={handleSubmit}
         action="https://getform.io/f/0Ucab26jyLUoBs0s2eKVoP1Tiy2h0KEYffmfLQDNNbRiRkO16p0Si3EyaNO4"
@@ -69,7 +70,7 @@ const Contacto = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-500"
           />
         </div>
         <div className="mb-4">
@@ -86,7 +87,7 @@ const Contacto = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-500"
           />
         </div>
         <div className="mb-4">
@@ -103,7 +104,7 @@ const Contacto = () => {
             value={formData.phone}
             onChange={handleChange}
             required
-            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-500"
           />
         </div>
         <div className="mb-4">
@@ -120,12 +121,12 @@ const Contacto = () => {
             onChange={handleChange}
             required
             rows="4"
-            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-500"
           ></textarea>
         </div>
         <button
           type="submit"
-          className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition duration-300"
+          className="w-full bg-purple-500 text-white py-2 rounded hover:bg-purple-600 transition duration-300"
         >
           Enviar
         </button>

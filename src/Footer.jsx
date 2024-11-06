@@ -6,7 +6,7 @@ function Footer() {
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (
-    <footer className="bg-blue-600 text-white p-6 text-center">
+    <footer className="bg-purple-600 text-white p-6 text-center">
       {/* Contenido centrado */}
       <div className="mb-6">
         <p className="mb-4">
@@ -14,37 +14,34 @@ function Footer() {
         </p>
 
         <div className="flex justify-center space-x-6 mt-4">
+          {/* Icono de Facebook */}
           <a
             href="https://www.facebook.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center"
+            className="flex items-center justify-center w-12 h-12 rounded-full hover:bg-blue-500 hover:text-white transition duration-300"
           >
-            <FaFacebookF
-              className="text-white hover:text-blue-400 transition duration-300"
-              size={30}
-            />
+            <FaFacebookF size={24} />
           </a>
+
+          {/* Icono de X */}
           <a
             href="https://x.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center"
+            className="flex items-center justify-center w-12 h-12 rounded-full hover:bg-black hover:text-white transition duration-300"
           >
-            <span className="text-white hover:text-black transition duration-300 text-3xl">
-              X
-            </span>
+            <span className="font-semibold text-xl">X</span>
           </a>
+
+          {/* Icono de Instagram */}
           <a
             href="https://www.instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center"
+            className="flex items-center justify-center w-12 h-12 rounded-full hover:bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 hover:text-white transition duration-300"
           >
-            <FaInstagram
-              className="text-white hover:text-pink-500 transition duration-300"
-              size={30}
-            />
+            <FaInstagram size={24} />
           </a>
         </div>
 
@@ -58,12 +55,12 @@ function Footer() {
         </div>
       </div>
 
-      <div className="bg-blue-700 text-white py-4">
+      <div className="bg-purple-700 text-white py-4">
         <div className="max-w-full mx-auto text-center px-6">
           <p className="font-semibold mb-2">Proyecto Desarrollado por:</p>
           <p className="flex flex-wrap justify-center gap-6">
             <span>
-              Supervisado por www.Codevistax.com- Oscar López Restrepo
+              Supervisado por www.Codevistax.com - Oscar López Restrepo
             </span>
             <span>Mariana Ayala Dávalos</span>
             <span>Mariana García Arévalo</span>
