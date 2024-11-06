@@ -5,8 +5,8 @@ const Resources = () => {
     {
       title: "Centro de Asesoramiento Psicológico",
       description:
-        "Ofrecen servicios de apoyo psicológico a estudiantes para manejar la ansiedad y el estrés. A través del chat de soporte SENA",
-      link: "https://www.sena.edu.co/es-co/ciudadano/paginas/chat.aspx",
+        "Ofrecen servicios de apoyo psicológico a estudiantes para manejar la ansiedad y el estrés.",
+      link: "https://astronautaemocional.com/blog/",
     },
     {
       title: "Técnicas de Manejo del Estrés",
@@ -24,7 +24,8 @@ const Resources = () => {
       title: "Grupos de Apoyo para Estudiantes",
       description:
         "Encuentra grupos de apoyo en línea donde puedes compartir experiencias y estrategias.",
-      link: "https://sena-cimm.blogspot.com/p/apoyo-sostenimiento.html",
+      link: "/contacto", 
+      isContactLink: true, 
     },
     {
       title: "Artículos sobre Ansiedad Estudiantil",
@@ -44,14 +45,23 @@ const Resources = () => {
           <li key={index} className="bg-white p-4 rounded-lg shadow-md">
             <h3 className="font-bold text-purple-800">{resource.title}</h3>
             <p className="text-gray-700 mb-2">{resource.description}</p>
-            <a
-              href={resource.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-purple-600 hover:underline"
-            >
-              Más información
-            </a>
+            {resource.isContactLink ? (
+              <a
+                href={resource.link}
+                className="text-purple-600 hover:underline"
+              >
+                Contáctanos
+              </a>
+            ) : (
+              <a
+                href={resource.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-purple-600 hover:underline"
+              >
+                Más información
+              </a>
+            )}
           </li>
         ))}
       </ul>
