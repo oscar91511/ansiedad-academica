@@ -58,12 +58,13 @@ function Footer() {
         </div>
       </div>
 
-      {/* Créditos del proyecto a lo largo */}
       <div className="bg-blue-700 text-white py-4">
         <div className="max-w-full mx-auto text-center px-6">
           <p className="font-semibold mb-2">Proyecto Desarrollado por:</p>
           <p className="flex flex-wrap justify-center gap-6">
-            <span>Supervisado por www.Codevistax.com- Oscar López Restrepo</span>
+            <span>
+              Supervisado por www.Codevistax.com- Oscar López Restrepo
+            </span>
             <span>Mariana Ayala Dávalos</span>
             <span>Mariana García Arévalo</span>
             <span>Valentina Lozano Rengifo</span>
@@ -74,7 +75,6 @@ function Footer() {
         </div>
       </div>
 
-      {/* Icono de WhatsApp flotante */}
       <a
         href={whatsappLink}
         target="_blank"
