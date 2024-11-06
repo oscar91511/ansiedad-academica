@@ -6,11 +6,11 @@ import Contact from "./Contact";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Terminos from "./Terminos";
-import PoliticaYservicios from "./PoliticaYservicios";
 import Estrategia from "./Estrategia";
 import EscuchaActiva from "./EscuchaActiva";
 import Aprendizaje from "./Aprendizaje";
 import Reflexiones from "./Reflexiones";
+import Politica from "./PoliticaYservicios";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
             <Route path="/resources" element={<Resources />} />
             <Route path="/contacto" element={<Contact />} />
             <Route path="/terminos" element={<Terminos />} />
-            <Route path="/privacidad" element={<PoliticaYservicios />} />
+            <Route path="/privacidad" element={<Politica />} />
             <Route path="/estrategias-apoyo" element={<Estrategia />} />
             <Route path="/escucha-activa" element={<EscuchaActiva />} />
             <Route path="/aprendizaje-control-emociones" element={<Aprendizaje />} />
