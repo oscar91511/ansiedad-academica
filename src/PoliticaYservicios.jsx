@@ -1,6 +1,7 @@
 import React from "react";
+import PoliticaYservicios from "./PoliticaYservicios";
 
-const PoliticaYServicios = () => {
+const PoliticaYservicios = () => {
   return (
     <div className="max-w-7xl mx-auto p-6">
       <h1 className="text-3xl font-semibold mb-4">
@@ -59,4 +60,4 @@ const PoliticaYServicios = () => {
   );
 };
 
-export default PoliticaYServicios;
+export default PoliticaYservicios;
