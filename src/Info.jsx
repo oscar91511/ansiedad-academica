@@ -86,12 +86,7 @@ const Info = () => {
         </p>
         <ul className="list-disc list-inside text-gray-700">
           <li>
-            <a
-              href="https://www.sena.edu.co/es-co/ciudadano/paginas/chat.aspx"
-              className="text-purple-600 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="/contacto" className="text-purple-600 hover:underline">
               Centro de Asesoramiento Psicológico
             </a>
           </li>
