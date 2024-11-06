@@ -47,18 +47,17 @@ function Home() {
         </div>
 
         <div className="w-full lg:w-3/4">
-          <h2 className="text-2xl font-semibold text-center">
+          <h2 className="animate-pulse text-3xl text-blue-900/90 font-semibold text-center py-4">
             Bienvenido a nuestra página
           </h2>
           <p className="mt-4 text-lg text-center">
-            Claro, aquí tienes una versión más breve: La ansiedad académica es
-            una preocupación común entre estudiantes, manifestándose como
-            nerviosismo antes de exámenes o dificultad para concentrarse. La
-            presión por obtener buenas calificaciones puede aumentar el estrés y
-            los síntomas como fatiga e irritabilidad. Aquí encontrarás
-            información y recursos para comprender mejor la ansiedad académica y
-            aprender a manejarla, incluyendo técnicas de relajación y la
-            importancia de buscar apoyo. Ver más...
+            La ansiedad académica es una preocupación común entre estudiantes,
+            manifestándose como nerviosismo antes de exámenes o dificultad para
+            concentrarse. La presión por obtener buenas calificaciones puede
+            aumentar el estrés y los síntomas como fatiga e irritabilidad. Aquí
+            encontrarás información y recursos para comprender mejor la ansiedad
+            académica y aprender a manejarla, incluyendo técnicas de relajación
+            y la importancia de buscar apoyo. Ver más...
           </p>
           <div className="flex justify-center mt-4">
             <Link
@@ -116,7 +115,7 @@ function Home() {
                   className="w-full h-[80px] rounded"
                 />
                 <p className="text-gray-600 mt-2">
-                  Estrés y ansiedad Ver que podemos hacer {index + 1}.
+                {index + 1} Estrés y ansiedad Ver que podemos hacer 
                 </p>
               </div>
             ))}

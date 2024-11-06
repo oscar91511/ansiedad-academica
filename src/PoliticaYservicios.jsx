@@ -1,5 +1,4 @@
 import React from "react";
-import PoliticaYservicios from "./PoliticaYservicios";
 
 const Politica = () => {
   return (
